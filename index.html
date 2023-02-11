@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+
+        <div id="head">
+            <div id="abdelghani"><h1>A</h1><h2>bdelghani</h2></div>
+            <div></div>
+            <div></div>
+            <div id="gestion"><h1>Stock Management</h1></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="countainer">
+
+            <div id="left">
+                <div id="search">
+                    <input onkeyup="SearchProd(this.value)" id="searchinput" placeholder="Search" type="text">
+                    <div>
+                        <button id="bytitle" type="submit">SEARCH BY TITLE</button>
+                        <button id="bycategory" type="submit">SEARCH BY CATEGORY</button>
+                    </div>
+                </div>
+
+                <div id="MENU">
+                    <ul>
+                        <li id="createli">Create new product</li>
+                        <li id="showall">Show all products</li>
+                        <li id="sorttitle">Sort by title</li>
+                        <li id="sortprice">Sort by price</li>
+                        <li id="sortvat">Sort by VAT</li>
+                        <li id="sortid">Sort by Id</li>
+                       <!-- Not yet --> <li id="deletecategory">Delete a Category -!-</li>
+                        <li id="deleteall">Delete all products</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div id="right">
+                <div id="back"><i class="fa fa-arrow-circle-left" style="font-size:40px;"></i></div>
+                <div id="table" >
+                    <table>
+                        <thead>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <TH>Category</TH>
+                            <th>Price(DH)</th>
+                            <th>VAT(%)</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+
+                <div style="position: relative;" id="createform" >
+                    <div id="success"  class="alert alert-success" role="alert"></div>
+                    <input maxlength="20" minlength="2" type="text" placeholder="Title" id="title">
+                    <input maxlength="15" minlength="2" type="text" placeholder="Category" id="category">
+                    <input  type="number" min="1" placeholder="Price (DH)" aria-placeholder="red" id="price">
+                    <input max="80" min="0" type="number" placeholder="VAT % (max:80)" id="vat">
+                    <input max="100" min="1" type="number" placeholder="Count (max:100)" id="count">
+                    <button type="submit"  id="btncreate">Create</button>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

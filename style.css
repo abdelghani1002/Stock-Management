@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: system-ui;
+}
+button{
+    background-color: rgb(67, 6, 124);
+    font-family:sans-serif;
+    height: 40px;
+    color:#fff;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 0.7em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(84, 6, 158);
+    color: aqua;
+    letter-spacing: 0.8px;
+}
+input::placeholder{
+    color: rgba(0, 112, 112, 0.959);
+    opacity: 0.9;
+}
+body{
+    background-image: linear-gradient(to bottom,rgb(53, 2, 57),rgb(2, 57, 59));
+    height: 100vh;
+    position: relative;
+}
+#head{
+    background-image: linear-gradient(to bottom,rgb(53, 2, 57),rgb(2, 57, 59));
+    width: 100%;
+}
+#head div ,#head{
+    display: flex;
+    flex-direction: row ;
+    color:#fff ;
+    justify-content: space-evenly;
+}
+
+#abdelghani h1{
+    font-size: 3em;
+    color: rgb(0, 255, 255);
+}
+#abdelghani h2{
+    padding-top: 17px;
+    font-size: 2em;
+}
+#gestion{
+    padding-top: 17px;
+}
+
+
+#countainer{
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: row;
+}
+#left {
+    width: 25%;
+    border-right: 2px solid aqua;
+    padding: 8px 25px 8px 8px;
+    height:510px;
+}
+#search div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#searchinput{
+    width: 98%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #b1cacacc;
+    font-weight:500;
+    font-size: 1.1em;
+}
+#searchinput:focus{
+    transform: scale(1.08);
+    font-weight:500;
+    font-size: 1.1em;
+    background-color: aquamarine;
+}
+#search button{
+    width: 49%;
+}
+#search button:hover{
+    transform: scale(1.1);
+}
+ul{
+    padding-left: 20px;
+    color: aquamarine;
+    font-size: 1.4em;
+    font-style: italic;
+    list-style:linear-gradient(to right,blue,black) ;
+}
+li{
+    margin: 15px 5px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#deleteall{
+    background-color: rgb(241, 10, 41);
+    font-weight: bold;
+    list-style:linear-gradient(to right,#fff,rgb(255, 0, 0));
+}
+li:hover{
+    background-color: rgb(170, 0, 136);
+    letter-spacing: 2px;
+    color: rgb(230, 242, 242);
+}
+#right{
+    width: 75%;
+    position: relative;
+}
+#table{
+    overflow-y: scroll;
+    width: 95%;
+    height: 520px;
+    margin-left: 30px;
+    border: 2px solid rgb(3, 51, 102);
+}
+table{
+    height: 505px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    border-collapse: collapse;
+    
+}
+thead{
+    position: fixed;
+    border-bottom: 1px solid aqua;
+    background-image: linear-gradient(to bottom,rgb(52, 2, 68),rgb(61, 2, 2));
+}
+#table::-webkit-scrollbar {
+    width: 22px;
+}
+
+#table::-webkit-scrollbar-track {
+    background: rgb(82, 0, 126);
+    box-shadow: -2px 0 10px 0px aqua;
+}
+
+#table::-webkit-scrollbar-thumb {
+    background-color: rgb(89, 156, 211);
+    border-radius: 20px;
+    border: 2px solid rgb(135, 0, 92);
+}
+thead th{
+    color: aqua;
+    font-size: 1.2em;
+    width: 125px;
+    padding: 5px 0;
+}
+#tr1{
+    margin-top: 30px;
+}
+tbody td {
+    width: 125px;
+}
+tbody tr:nth-child(2n+1) :not(#nothingfound,button)  {
+    background-color: #004e4e;
+}
+table button{
+    width: 85%;
+    background: rgb(127, 8, 82);
+    font-size: 1em;
+    color: rgb(249, 246, 251);
+    height: 30px;
+}
+table button:hover{
+    letter-spacing: 2px;
+    background-color: rgb(226, 0, 226);
+    color: rgb(0, 242, 242);
+}
+tbody:before {
+    content: "-";
+    height: 40px;
+    display: block;
+    color: transparent;
+}
+.deletebtn:hover ,#deleteall:hover ,#deletecategory:hover{
+    background-color: red;
+}
+/***************************************************************************/
+#createform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 100%;
+    padding: 0px 22px 0px 15px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid aqua;
+    border-radius: 0 15px;
+    display: none;
+}
+#createform input,#createform button{
+    width: 96%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 1.2em;
+}
+#createform button{
+    height: 40px;
+}
+#createform button:hover{
+    letter-spacing: 2px;
+}
+#createform input{
+    background-color: #004e4e96;
+    color: aqua;
+    font-weight:500;
+    outline: none;
+    margin: 20px 5px;
+}
+#createform input:focus{
+    transform: scale(1.06);
+    background-color: aquamarine;
+    color: rgb(41, 0, 0);
+    font-weight:500;
+}
+
+#right #back{
+    position: absolute;
+    background-color: #00c9c9;
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 20px;
+    width: 3.5%;
+    cursor: pointer;
+    transition: 0.4s;
+    display: none;
+}
+#right #back:hover{
+    background-color: #038585;
+    width: 5%;
+}
+
+
+#success{
+    display: none;
+    background-color: rgb(7, 234, 7);
+    border-radius: 15px;
+    width: 96%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#nothingfound{
+    font-size: 1.2em;
+    padding: 150px 340px;
+    color: #00c9c9;
+    text-shadow: 1px 1px 2px wheat;
+}
